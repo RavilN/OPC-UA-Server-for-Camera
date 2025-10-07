@@ -35,7 +35,7 @@ As a result, OPC UA Server should start and listen on port 4840.
 
 ### The OPC UA Server failes to start
 
-This can happen is the default port 4840 is used by other application. To resolve, change the port number in OPC UA Server code, or close the application that uses this port.
+This can happen if the default port 4840 is used by other application. To resolve, change the port number in OPC UA Server code, or close the application that uses this port.
 
 ### The server cannot have access to the camera.
 
@@ -47,4 +47,4 @@ If the option is already ON, check in the same dialog window, if some other appl
 
 - Detect all cameras in the host and add them to the address space.
 - Add properties showing if a camera is in use, and other available properties.
-- Take snapshots only when clients are requesting either to read the image, or added monitored item for the camera variable. If the client is subscribed, then take snapshots with interval defined by the monitored item sampling interval, and apply percentage based deadband. Applying deadband will reduce bandwidth as the server would publish new image only when it the difference comparing to the previously published snapshot image is greater than deadband percentage.
+- Take snapshots only when clients are requesting either to read the image, or added monitored item for the camera variable. If the client is subscribed, then take snapshots with interval defined by the monitored item sampling interval, and apply percentage based deadband. Applying deadband will reduce bandwidth as the server would publish new image only when the difference comparing to the previously published snapshot image is greater than deadband percentage.
